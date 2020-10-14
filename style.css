@@ -6,33 +6,50 @@ input {
   outline: none;
 }
 
-div div {
+main > div  {
   display: flex;
 }
-input:focus {
- background-color: darkorange;
+div {
+  position: relative;
 }
- .input--hover:hover {
-   border: rgba(51, 51, 51, 1) 1px solid;
- }
- .input--focus:focus {
-  border: 1px solid rgba(41, 98, 255, 1)
- }
-small {
+main> div > div {
+  display: flex;
+  flex-direction: column;
+}
+/* small {
+ position: absolute;
+} */
+.hover:hover {
+  border: rgba(51, 51, 51, 1) 1px solid;
+}
+.focus:focus {
+  border: 1px solid rgba(41, 98, 255, 1);
+}
+.error {
+  border: 1px solid rgba(211, 47, 47, 1)
+}
+.error-hover:hover {
+  border: rgba(51, 51, 51, 1) 1px solid;
+}
+.error-focus:focus {
+  border: 1px solid rgba(211, 47, 47, 1)
+}
+
+div .helperText + .helperText {
+  background-color: darkred;
+}
+
+/* small {
   position: absolute;
   bottom: 11rem;
-}
+} */
 div {
   margin-bottom: 2rem;
 }
 
-.input--error {
-  border : red 1px solid;
-}
 .helperText {
 
 }
-.input--sm {
+.sm {
   height: 40px;
 }
-

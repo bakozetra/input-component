@@ -1,42 +1,92 @@
 import React from 'react'
 import Input from './input'
 function App () {
-   return (
+  return (
 <main>
   <div>
-    <Input  />
-    <Input hover />
-    <Input  focus />
+    <Input 
+     type="text"
+     name="default"
+      />
+    <Input 
+      type="text"
+      name="hover"
+      hover />
+    <Input  
+      type="text"
+      name="focus"
+      focus />
   </div>
   <div>
-    <Input error />
-    <Input hover />
-    <Input error focus />
+    <Input error
+    type="text"
+    name="error"
+    value= ''
+    focus />
+    <Input 
+    type="text"
+    name="error-hover"
+    value= ''
+    />
+    <Input 
+     type="text"
+     name="error-focus"
+     value= ''
+    error focus />
   </div>
   <div>
     <Input disabled />
   </div>
   <div>
-    <Input helperText="some interesting text"/>
-    <br/><small>some interesting text</small>
+    <Input 
+     type="text"
+     name="helpertext"
+     value= ''
+     helperText = "some interesting text"/>
+    <small>some interesting text</small>
+    <Input 
+     type="text"
+     name ="helpertext"
+     value = ''
+     helperText="some interesting text"
+     ></Input>
+    <small>some interesting text</small>
   </div>
   <div>
-    <Input startIcon = 'call'/>
+    <Input 
+     type="text"
+     name="error"
+     value= ''
+    startIcon = 'call'/>
     <Input endIcon = ''/>
   </div>
   <div>
-    <Input value ="text" />
+    <Input 
+     type="text"
+     value ="text" />
   </div>
   <div>
-    <Input size ='sm'/>
-    <Input size ='md'/>
+    <Input 
+     type="text"
+     value= ''
+     size ='sm'/>
+    <Input 
+     type="text"
+     size ='md'/>
   </div>
   <div>
-    <Input fullWidth/>
+    <Input 
+     type="text"
+     fullWidth/>
   </div>
   <div>
-    <Input/>
-    <Input/>
+    <Input
+     type="text"
+     value= ''/>
+    <Input
+     type="text"
+     value= ''
+     />
   </div>
 </main>
   )
