@@ -1,0 +1,38 @@
+input {
+  width : 200px;
+  height: 56px;
+  border-radius: 10px;
+  margin-right: 1rem;
+  outline: none;
+}
+
+div div {
+  display: flex;
+}
+input:focus {
+ background-color: darkorange;
+}
+ .input--hover:hover {
+   border: rgba(51, 51, 51, 1) 1px solid;
+ }
+ .input--focus:focus {
+  border: 1px solid rgba(41, 98, 255, 1)
+ }
+small {
+  position: absolute;
+  bottom: 11rem;
+}
+div {
+  margin-bottom: 2rem;
+}
+
+.input--error {
+  border : red 1px solid;
+}
+.helperText {
+
+}
+.input--sm {
+  height: 40px;
+}
+
